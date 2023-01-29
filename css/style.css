@@ -41,6 +41,10 @@ body {
   position: absolute;
 } */
 
+.section-hero {
+  width: 100vw;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -69,6 +73,27 @@ body {
 ion-icon {
   height: 3rem;
   width: 3rem;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.cart-number-items {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border-radius: 50%;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+.cart-number-items span {
+  color: #fff;
 }
 
 li {
@@ -111,11 +136,12 @@ li {
 .hero-intro p {
   color: whitesmoke;
   font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .product-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
   align-items: center;
   justify-content: center;
@@ -134,7 +160,7 @@ li {
 }
 
 .product-description {
-  color: whitesmoke;
+  color: #cf9c46;
   font-size: smaller;
   max-width: 20rem;
   text-align: center;
@@ -147,6 +173,7 @@ li {
 .section-catalogue {
   background-color: rgb(255, 254, 254);
   height: 80vh;
+  width: 100vw;
 }
 
 .catalogue-intro {
@@ -162,7 +189,8 @@ li {
   color: #222;
 }
 
-.collection-one {
+.collection-one,
+.customers {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,7 +199,8 @@ li {
   margin: auto;
 }
 
-.collection-img {
+.collection-img,
+.customer-img {
   display: grid;
   height: 15rem;
   justify-items: center;
@@ -194,8 +223,9 @@ li {
 }
 
 .perfume-group-section {
+  width: 100vw;
   padding: 6rem;
-  background-color: #555;
+  background-color: #222;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -275,19 +305,131 @@ li {
   color: #cf9c46;
   text-decoration: none;
   font-size: 2rem;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   margin-left: 45rem;
-  transition: all 0.3s;
+  /* transition: all 0.3s; */
   /* justify-content: end; */
 }
 
-.perfume-group-btn:hover {
-  color: #dcb063;
+.perfume-group-btn:hover .btn {
+  color: white;
   transform: scale(1.1);
-  color: whitesmoke;
+  background-color: #000;
+  cursor: pointer;
 }
 
-.arrow-right {
-  height: 2rem;
-  width: 2rem;
+.perfume-group-btn:hover .perfume-group-icon {
+  color: #cf9c46;
+}
+
+.perfume-group-btn:active .btn {
+  transform: scale(1.05);
+}
+
+.btn {
+  display: inline-flex;
+  padding: 1rem 2rem;
+  transition: all 0.2s;
+}
+
+.perfume-group-icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  margin-left: 0.5rem;
+  /* justify-self: center; */
+}
+
+.section-customers {
+  width: 100vw;
+  padding-bottom: 5rem;
+}
+
+.customer-img {
+  transition: all 0.3s;
+}
+
+.customer-img img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.customer-img img :not(:hover) {
+  /* transform: scale(1.1); */
+  transition: 0.3s;
+}
+
+.customer-img img:active {
+  transform: scale(1.05);
+}
+
+.customers {
+  gap: 0;
+}
+
+.testimonial-text {
+  max-width: 60rem;
+  margin: 5rem auto;
+  text-align: center;
+  /* padding: 2rem; */
+}
+
+.testimonial-text q {
+  font-size: 2rem;
+  color: #888;
+  line-height: 1.4;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.testimonial-text span {
+  display: block;
+  color: #e8c88f;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  /* font-style: italic; */
+  font-weight: bolder;
+}
+
+.urge-section {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 5rem;
+}
+
+.urge-section .b-image {
+  background-image: linear-gradient(to left, #2222226a, #000),
+    url(../images/pmv-chamara-ILhf4VsPn_w-unsplash.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+/* .urge-section-text {
+  text-align: center;
+  max-width: 100rem;
+  margin: 10rem auto;
+  line-height: 1.5;
+} */
+
+.urge-section h2 {
+  font-size: 4rem;
+  color: #cf9c46;
+  padding-top: 25rem;
+  padding-left: 3rem;
+  margin-bottom: 5rem;
+}
+
+.urge-section p {
+  font-size: 2rem;
+  color: #e8c88f;
+  max-width: 70rem;
+  /* margin: auto; */
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+  padding-left: 3rem;
 }
