@@ -228,6 +228,8 @@ li {
   background-color: #222;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
 }
 
 .perfume-group-images {
@@ -266,12 +268,27 @@ li {
 }
 
 .perfume-group-text {
+  position: relative;
   text-align: center;
   margin: 6rem auto;
   color: whitesmoke;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   padding: 5rem;
+}
+
+.frag-price-tag {
+  position: absolute;
+  top: 0;
+  background-color: rgb(143, 23, 23);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 1.8rem 4.5rem;
+  width: 5rem;
+  justify-content: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .perfume-group-text h2 {

@@ -1,0 +1,52 @@
+/* Below 685px */
+@media (max-width: 43em) {
+  .hero-intro {
+    padding: 2rem !important;
+    margin: 5rem auto !important;
+  }
+
+  .hero-intro p {
+    font-size: 2rem !important;
+    line-height: 1.8 !important;
+    font-weight: bolder;
+  }
+
+  .collection-one {
+    font-size: 2rem !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    margin-bottom: 4rem;
+    padding: 4rem;
+  }
+
+  .section-catalogue {
+    height: 150vh !important;
+  }
+
+  .catalogue-intro {
+    /* max-width: 50rem !important; */
+    font-size: 1.8rem !important;
+    margin: 5rem 3rem;
+  }
+
+  .perfume-group-section {
+    grid-template-columns: 1fr !important;
+  }
+
+  .perfume-group-text p {
+    font-size: 2rem;
+  }
+
+  .shop-now-box {
+    margin-top: 8rem;
+  }
+
+  .perfume-group-btn {
+    margin-left: unset !important;
+  }
+
+  .btn {
+    padding: 2rem 4rem;
+    font-size: 2rem;
+  }
+}
