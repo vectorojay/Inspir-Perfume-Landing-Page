@@ -50,3 +50,56 @@
     font-size: 2rem;
   }
 }
+
+/* Below 424px */
+@media (max-width: 27em) {
+  .nav-first {
+    display: none;
+  }
+
+  .hero-intro {
+    padding: 4rem !important;
+  }
+
+  .product-list {
+    overflow-y: hidden;
+  }
+
+  .section-hero {
+    height: 150vh;
+  }
+
+  .section-catalogue {
+    height: 250vh !important;
+  }
+
+  .collection-one {
+    grid-template-columns: 1fr !important;
+    gap: 13rem !important;
+  }
+
+  .flex-d-col {
+    flex-direction: column;
+  }
+
+  .perfume-group-text {
+    padding: unset !important;
+    grid-row: 1/2;
+  }
+
+  .customers {
+    overflow-y: hidden;
+  }
+
+  .testimonial-text {
+    padding: 2rem !important;
+  }
+
+  .b-image {
+    padding: 3rem;
+  }
+
+  .urge-section h2 {
+    padding-top: 10rem !important;
+  }
+}
