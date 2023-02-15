@@ -1,0 +1,73 @@
+/* UNIVERSAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+/* SECTION INTRO */
+.intro {
+  color: #555;
+  margin: auto;
+  padding: 10rem 2rem 5rem;
+  text-align: center;
+  max-width: 70rem;
+  line-height: 1.3;
+}
+
+/* LISTS */
+li {
+  list-style: none;
+}
+
+/* HEADINGS */
+.heading-primary,
+.heading-secondary {
+  color: whitesmoke;
+  font-size: 6rem;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+
+/* FLEX */
+.dis-flex {
+  display: flex;
+}
+
+/* GAPS */
+.gap-md {
+  gap: 2rem;
+}
+
+/* ALIGN ITEMS & JUSTIFY CONTENT */
+.align-just-ct {
+  align-items: center;
+  justify-content: center;
+}
+
+/* MARGINS */
+.mar-top-small {
+  margin-top: 1.4rem;
+}
+
+.mar-right-small {
+  margin-right: 1.4rem;
+}
+
+.mar-bottom-small {
+  margin-bottom: 1.4rem;
+}
+
+.mar-left-small {
+  margin-left: 1.4rem;
+}

@@ -1,48 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.4rem;
-  font-family: sans-serif;
-  overflow-x: hidden;
-}
-
-/* HERO-SECTION */
+/***************** HERO-SECTION ******************/
 .section-hero {
   position: relative;
-  width: 100%;
-
-  /* background-color: rgb(169, 174, 178); */
+  width: 100vw;
   background-color: #222;
   height: 130vh;
-}
-
-/* .hero-container {
-  z-index: 2;
-}
-
-.bg-image {
-  background-image: url("../images/charles-forerunner-gapYVvUg1M8-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  filter: blur(8px);
-  z-index: -1;
-  top: 0;
-  left: 0;
-  position: absolute;
-} */
-
-.section-hero {
-  width: 100vw;
 }
 
 .navigation {
@@ -52,8 +13,26 @@ body {
   padding: 2rem 3rem 4rem;
 }
 
+.logo span {
+  font-size: 2.6rem;
+  font-weight: bolder;
+  color: #cf9c46;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
 .nav-item {
+  position: relative;
   transition: all 0.3s;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
 }
 
 .nav-item a {
@@ -66,17 +45,9 @@ body {
   color: #dcb063;
 }
 
-.nav-item:hover {
-  transform: scale(1.1);
-}
-
-ion-icon {
+.nav-cart {
   height: 3rem;
   width: 3rem;
-}
-
-.nav-item {
-  position: relative;
 }
 
 .cart-number-items {
@@ -96,41 +67,13 @@ ion-icon {
   color: #fff;
 }
 
-li {
-  list-style: none;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.logo span {
-  font-size: 2.6rem;
-  font-weight: bolder;
-  color: #cf9c46;
-}
-
 .hero-intro {
   text-align: center;
   max-width: 60rem;
   text-align: center;
   line-height: 1.3;
-}
-
-.hero-intro {
   margin: 10rem auto;
   margin-top: 5rem;
-}
-
-.heading-primary,
-.heading-secondary {
-  color: whitesmoke;
-  font-size: 6rem;
-  font-weight: lighter;
-  margin-bottom: 2rem;
 }
 
 .hero-intro p {
@@ -149,6 +92,11 @@ li {
 
 .product {
   height: 40rem;
+  transition: all 0.5s;
+}
+
+.product:hover {
+  transform: scale(1.1);
 }
 
 .product-list img {
@@ -169,20 +117,11 @@ li {
   margin: auto;
 }
 
-/* CATALOGUE SECTION */
+/******************** CATALOGUE SECTION *********************/
 .section-catalogue {
   background-color: rgb(255, 254, 254);
   height: 80vh;
   width: 100vw;
-}
-
-.catalogue-intro {
-  color: #555;
-  margin: auto;
-  padding: 10rem 2rem 5rem;
-  text-align: center;
-  max-width: 70rem;
-  line-height: 1.3;
 }
 
 .heading-secondary {
@@ -222,7 +161,9 @@ li {
   color: #555;
 }
 
-.perfume-group-section {
+/* FOUR FRAG SECTION */
+
+.four-frag-section {
   width: 100vw;
   padding: 6rem;
   background-color: #222;
@@ -232,7 +173,7 @@ li {
   justify-content: center;
 }
 
-.perfume-group-images {
+.four-frag-images {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -241,33 +182,64 @@ li {
   gap: 1rem;
 }
 
-.perfume-group-img {
+.four-frag-img {
+  position: relative;
   height: 35rem;
   width: fit-content;
 }
 
-.perfume-group-img img {
+.four-frag-img img {
   height: 100%;
 }
 
-.dis-flex {
-  display: flex;
+.image-overlay,
+.image-overlay-2 {
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  background-color: #1d1c1beb;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
 }
 
-.gap-md {
-  gap: 2rem;
+.frag-perf-title {
+  /* padding: 2rem; */
+  color: #fff;
 }
 
-.mar-bottom {
-  margin-bottom: 1.4rem;
+.frag-perf-subtitle {
+  /* padding: 2rem; */
+  color: #fff;
+  display: none;
 }
 
-.align-just-ct {
-  align-items: center;
-  justify-content: center;
+.image-overlay-2 {
+  height: 100%;
+  width: 100%;
+  background-color: #0000009f;
+  visibility: hidden;
+  transition: none;
 }
 
-.perfume-group-text {
+.four-frag-img:hover .image-overlay-2 {
+  visibility: visible;
+}
+
+.four-frag-img:hover .image-overlay {
+  height: 50%;
+}
+
+.four-frag-img:hover .image-overlay .frag-perf-title {
+  padding: 2rem;
+}
+
+.four-frag-img:hover .image-overlay .frag-perf-subtitle {
+  display: block;
+  padding: 2rem;
+}
+
+.four-frag-text {
   position: relative;
   text-align: center;
   margin: 6rem auto;
@@ -277,7 +249,17 @@ li {
   padding: 5rem;
 }
 
-.frag-price-tag {
+.four-frag-text h4 {
+  margin-bottom: 6rem;
+}
+
+.four-frag-text h2 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  color: #cf9c46;
+}
+
+.four-frag-pricetag {
   position: absolute;
   top: 0;
   background-color: rgb(143, 23, 23);
@@ -291,32 +273,22 @@ li {
   border-bottom-right-radius: 20px;
 }
 
-.perfume-group-text h2 {
-  font-size: 5rem;
-  margin-bottom: 2rem;
-  color: #cf9c46;
-}
-
-.perfume-group-text p {
+.four-frag-text p {
   margin-bottom: 2rem;
 }
 
-.perfume-group-text h4 {
-  margin-bottom: 6rem;
-}
-
-.perfume-group-list {
+.four-frag-perf-list {
   text-align: left;
   font-size: 3rem;
   padding-left: 5rem;
   margin-top: 3rem;
 }
 
-.perfume-group-list li {
+.four-frag-perf-list li {
   list-style-type: georgian;
 }
 
-.perfume-group-btn {
+.four-frag-btn {
   display: inline-block;
   /* align-items: center; */
   color: #cf9c46;
@@ -328,19 +300,15 @@ li {
   /* justify-content: end; */
 }
 
-.perfume-group-btn:hover .btn {
+.four-frag-btn:hover .btn {
   color: white;
   transform: scale(1.1);
   background-color: #000;
   cursor: pointer;
 }
 
-.perfume-group-btn:hover .perfume-group-icon {
+.four-frag-btn:hover .four-frag-icon {
   color: #cf9c46;
-}
-
-.perfume-group-btn:active .btn {
-  transform: scale(1.05);
 }
 
 .btn {
@@ -349,20 +317,30 @@ li {
   transition: all 0.2s;
 }
 
-.perfume-group-icon {
+.four-frag-icon {
   height: 1.6rem;
   width: 1.6rem;
   margin-left: 0.5rem;
   /* justify-self: center; */
 }
 
+/*********************** CUSTOMERS SECTION ***************************/
+
 .section-customers {
   width: 100vw;
   padding-bottom: 5rem;
 }
 
+.customers {
+  gap: 0;
+}
+
 .customer-img {
   transition: all 0.3s;
+}
+
+.customer-img:active {
+  transform: scale(0.95);
 }
 
 .customer-img img:hover {
@@ -370,17 +348,9 @@ li {
   transition: all 0.3s;
 }
 
-.customer-img img :not(:hover) {
+.customer-img img:not(:hover) {
   /* transform: scale(1.1); */
-  transition: 0.3s;
-}
-
-.customer-img img:active {
-  transform: scale(1.05);
-}
-
-.customers {
-  gap: 0;
+  transition: all 0.3s;
 }
 
 .testimonial-text {
@@ -407,6 +377,7 @@ li {
   font-weight: bolder;
 }
 
+/************** URGE SECTION ***************/
 .urge-section {
   height: 100vh;
   width: 100vw;

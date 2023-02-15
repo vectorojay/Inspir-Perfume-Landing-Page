@@ -1,4 +1,4 @@
-/* Below 685px */
+/************ Below 685px ************/
 @media (max-width: 43em) {
   .hero-intro {
     padding: 2rem !important;
@@ -51,7 +51,7 @@
   }
 }
 
-/* Below 424px */
+/**************** Below 424px ********************/
 @media (max-width: 27em) {
   .nav-first {
     display: none;
