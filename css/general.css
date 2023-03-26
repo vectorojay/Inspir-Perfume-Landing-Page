@@ -34,8 +34,10 @@ a {
   text-decoration: none;
 }
 
-.btn {
+button {
   cursor: pointer;
+  border: none;
+  background-color: #cf9c46;
 }
 
 /* HEADINGS */
@@ -47,9 +49,21 @@ a {
   margin-bottom: 2rem;
 }
 
+/********* DISPLAYS *************/
+
 /* FLEX */
 .dis-flex {
   display: flex;
+}
+
+/* GRID */
+.dis-grid {
+  display: grid;
+}
+
+/* INLINE-BLOCK */
+.dis-inline-block {
+  display: inline-block;
 }
 
 /* GAPS */
@@ -63,7 +77,12 @@ a {
   justify-content: center;
 }
 
-/* MARGINS */
+/* JUSTIFY-SELF */
+.just-self-end {
+  justify-self: end;
+}
+
+/* MARGINS (SMALL) */
 .mar-top-small {
   margin-top: 1.4rem;
 }
@@ -78,4 +97,23 @@ a {
 
 .mar-left-small {
   margin-left: 1.4rem;
+}
+
+/* MARGINS(MEDIUM) */
+.mar-right-md {
+  margin-right: 3rem;
+}
+
+.mar-left-md {
+  margin-left: 3rem;
+}
+
+/* PADDINGS(MEDIUM) */
+.pad-left-md {
+  padding-left: 3rem;
+}
+
+/* TEXT-ALIGN */
+.txt-al-left {
+  text-align: left;
 }

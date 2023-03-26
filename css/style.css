@@ -100,7 +100,8 @@
   transform: scale(1.1);
 }
 
-.product:hover .product-btn-box {
+.product:hover .product-btn-box,
+.bestseller-perf:hover .bestseller-btn-box {
   display: block;
 }
 
@@ -112,14 +113,18 @@
   margin-bottom: 1rem;
 }
 
-.product-btn-box {
+.product-btn-box,
+.bestseller-btn-box {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
+  z-index: 9;
   display: none;
 }
-.product-price {
+.product-price,
+.bestseller-price {
   color: orangered;
+  font-weight: bolder;
   font-size: 1.2rem;
   width: 0;
   display: inline-block;
@@ -127,21 +132,24 @@
   /* margin-right: 2rem; */
 }
 
-.product-btn-box:hover .product-price {
+.product-btn-box:hover .product-price,
+.bestseller-btn-box:hover .bestseller-price {
   width: 4.8rem;
   transition: 0.3s;
   visibility: visible;
 }
 
-.product-btn-box .btn {
-  background-color: #cf9c46;
+.bestseller-btn-box:hover .bestseller-price {
+  width: 3.6rem;
 }
 
-.product-btn-box .btn:active {
+.product-btn-box .btn:active,
+.bestseller-btn-box .btn:active {
   transform: scale(0.95);
 }
 
-.product-btn-box .btn:hover {
+.product-btn-box .btn:hover,
+.bestseller-btn-box .btn:hover {
   background-color: #e8c88f;
 }
 
@@ -463,4 +471,44 @@
     "Lucida Sans", Arial, sans-serif;
   font-weight: lighter;
   padding-left: 3rem;
+}
+
+/****************** FEATURED PERF SECTION ********************/
+.bestseller-perf-section {
+  padding: 3rem;
+}
+
+.bestseller-btn,
+.bestseller-btn-bg {
+  padding: 2rem 4rem;
+  margin-top: 4rem;
+}
+
+.bestseller-btn-bg:hover {
+  background-color: #e8c88f;
+}
+
+.bestseller-perf {
+  position: relative;
+  box-shadow: 0 0 32px 0px rgba(0, 0, 0, 0.1);
+  height: 45rem;
+  width: 30rem;
+  overflow: hidden;
+  padding: 5rem;
+}
+
+.bestseller-perf img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s;
+  /* aspect-ratio: 3/2;
+  object-fit: contain; */
+}
+
+.bestseller-perf img:hover {
+  transform: scale(1.1);
+}
+
+.bestseller-perf p {
+  text-align: left;
 }
