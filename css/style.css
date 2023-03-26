@@ -476,6 +476,7 @@
 /****************** FEATURED PERF SECTION ********************/
 .bestseller-perf-section {
   padding: 3rem;
+  margin-bottom: 15rem;
 }
 
 .bestseller-btn,
@@ -511,4 +512,25 @@
 
 .bestseller-perf p {
   text-align: left;
+}
+
+/********************* BRANDS SECTION ************************/
+.brands {
+  background-color: #0000009f;
+  margin-bottom: 15rem;
+  height: 300px;
+}
+.brands-box {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+}
+
+.brand-logo {
+  /* height: 80px; */
+  width: 20%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  filter: opacity(35%);
 }
