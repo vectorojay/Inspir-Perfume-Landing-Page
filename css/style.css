@@ -432,7 +432,7 @@
 .urge-section {
   height: 100vh;
   width: 100vw;
-  margin-top: 5rem;
+  margin: 5rem 0 15rem 0;
 }
 
 .urge-section .b-image {
@@ -533,4 +533,160 @@
   aspect-ratio: 3/2;
   object-fit: contain;
   filter: opacity(35%);
+}
+
+/************** BLOG SECTION *************/
+
+.blog {
+  /* background-color: #222; */
+  padding: 0 10rem;
+}
+
+/* .blog-container {
+  height: 100%;
+  width: 100%;
+} */
+
+.blog-heading {
+  text-align: center;
+}
+
+.blog-box {
+  grid-template-columns: 700px 2fr;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+
+.main-post-box,
+.side-post-box {
+  height: 100%;
+  width: 100%;
+
+  /* background-color: #222; */
+}
+
+.main-post-box {
+  align-items: center;
+  padding: 3rem;
+  box-shadow: 0 0 32px 0px rgba(0, 0, 0, 0.1);
+}
+
+.side-post-box {
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  height: unset;
+  /* padding: 6rem 2rem; */
+  /* background-color: #cf9c46; */
+}
+
+.main-post-img {
+  height: 500px;
+  width: 100%;
+}
+
+.main-post-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-post-text,
+.side-post-text {
+  align-content: start;
+  padding: 2rem;
+  color: #444;
+  height: 100%;
+}
+
+.main-post-text a,
+.side-post-text a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-post-text a:hover,
+.side-post-text a:hover {
+  text-decoration: underline;
+}
+
+.main-post-title {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  /* white-space: nowrap; */
+}
+
+.main-post-subheading {
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.read-time {
+  font-size: 1.1rem;
+  background-color: #df9414;
+  color: #000;
+  display: inline-block;
+  padding: 0.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.author-box {
+  align-items: center;
+  gap: 1rem;
+  /* justify-content: center; */
+}
+
+.author-img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  border: 1.8px solid #df9414;
+}
+
+.author-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.author-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.author-date {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.side-post {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 32px 0px rgba(0, 0, 0, 0.1);
+}
+
+.side-post-img {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.side-post-img img {
+  height: 150px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.side-post-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
